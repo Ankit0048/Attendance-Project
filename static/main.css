@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    line-height: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('index_background.png');
+}
+/*  Styling of the navigation bar */
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #8ceda4;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.topnav li {
+    list-style: none;
+    float:left;
+    
+}
+
+nav ul.topnav li  a {
+    display: block;
+    margin:auto;
+    text-decoration: none;
+    min-height: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #666; 
+}
+/*Hovering action */
+nav ul.topnav li a:hover {
+    background-color: darkblue;
+    color: white;
+    font-style:italic;
+}
+
+.container {
+    display: solid;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.container h1 {
+    display: block;
+    margin:auto;
+    width: 100%;
+    padding: 2%;
+}
+
+/* Arrangement of buttons */
+ .choices {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.choices .user_instruction  {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.choices .user_instruction a {
+    text-decoration: none;
+}
+
+.choices .user_instruction a button.regis {
+    background-image: url("newregistration.png");
+    background-size: 205px 205px ;
+    background-position: -4px -2px;
+    font-size: 23px;
+    text-decoration:None;
+    font-weight: bold;
+    text-shadow: 3px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 0;
+    display: block;
+    margin:auto;
+    opacity: 0.8;
+}
+
+.choices .user_instruction a button.regis:hover {
+    background-image: url("newregistration.png");
+    background-size: 205px 205px ;
+    background-position: -4px -2px;
+    font-size: 23px;
+    color: red;
+    text-decoration:None;
+    font-weight: bold;
+    text-shadow: 3px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 0;
+    display: block;
+    margin:auto;
+    opacity: 0.8;
+}
+
+
+.choices .user_instruction a button.login {
+    background-image: url("login.png");
+    background-size: 202px 202px;
+    background-position: -1px -4px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    font-size: 23px;
+    text-decoration:None;
+    font-weight: bold;
+    text-shadow: 3px;
+    padding: 0;
+    display: block;
+    margin:auto;
+    opacity: 0.8;
+}
+
+.choices .user_instruction a button.login:hover {
+    background-image: url("login.png");
+    background-size: 202px 202px;
+    background-position: -1px -4px;
+    height: 200px;
+    width: 200px;
+    color: red;
+    border-radius: 50%;
+    font-size: 23px;
+    text-decoration:None;
+    font-weight: bold;
+    text-shadow: 3px;
+    padding: 0;
+    display: block;
+    margin:auto;
+    opacity: 0.8;
+}
