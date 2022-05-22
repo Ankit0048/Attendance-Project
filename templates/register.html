@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li ><a href="/">Home</a></li>
+            <li><a href="#about">Github</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Registration Form</h1>
+    </div>
+    <div class="form_holder">
+        <div class="enteries">
+            <form action="\register" method="POST">
+                <h2>Email Id</h2>
+                <input type="text" placeholder="Email Id" id="email_id" name="email_id"> 
+                <h2>User Name</h2>
+                <input type="text" placeholder="User Name" id="user_id" name="user_id"> 
+                <h2>Create Password</h2>
+                <input type="password" placeholder="Create Password" id="password" name="password"> 
+                <h2> Re-enter Password</h2>
+                <input type="password" placeholder="Renter Password" id="pasword_match" name="password_match"> 
+                <br>
+                <br>
+                <input type="submit" value="Next" class="click">
+            </form>
+        </div>
+    </div>
+    {% if tasks==1 %}
+    <div class="popup">
+        <br>
+        <h3 color="red" align="center">Some of the fields were left empty</h3>
+    </div>
+    {% elif tasks==2  %}
+    <div class="popup">
+        <br>
+        <h3 color="red" align="center">The entered password did not match. Please re-enter</h3>  
+    </div>
+    {% elif tasks==3 %}
+    <div class="popup">
+        <br>
+        <h3 color="red">The email id is already registered.</h3>
+    </div>
+    {% else %}
+    {% endif %}
+</body>
+</html>

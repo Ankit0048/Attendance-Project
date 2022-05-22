@@ -47,7 +47,7 @@ nav ul.topnav li a:hover {
 .container {
     display: solid;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 20px;
 }
 
 .container h1 {
@@ -55,6 +55,7 @@ nav ul.topnav li a:hover {
     margin:auto;
     width: 100%;
     padding: 2%;
+
 }
 
 /* Arrangement of buttons */
@@ -143,4 +144,93 @@ nav ul.topnav li a:hover {
     display: block;
     margin:auto;
     opacity: 0.8;
+}
+
+/* Registration page */
+.form_holder {
+    display: block;
+    width: 100%;
+
+}
+
+.form_holder .enteries {
+    display: block;
+    line-height: 20px;
+    margin: auto;
+    width: 30%;
+    min-width: 200px;
+    text-align: left;
+    background-color: white;
+    border-radius: 6%;
+    padding: 15px;
+}
+
+.form_holder .enteries input {
+    width: 80%;
+    min-width: 140px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.form_holder .enteries input.click {
+    width: 80px;
+}
+
+
+.form_holder .enteries input.click:hover {
+    width: 80px;
+    background-color: blue;
+    font-weight: bold;
+}
+
+.popup {
+    display:solid;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+.popup h3 {
+    color: red;
+}
+
+/* Face registration  */
+.camera_container {
+    display: solid;
+    width: 100%;
+}
+
+.camera_container img {
+    display: block;
+    margin: auto;
+    box-shadow: -5px -5px;
+    
+}
+
+.capture {
+    display: block;
+    width: 100%;
+}
+
+.capture form {
+    margin-top: 20px;
+    display: block;
+
+}
+
+.capture form input {
+    width: 80px;
+    display: block;
+    font-size: 17px;
+    margin: auto;
+    padding: 4px;
+}
+
+
+
+.capture form input:hover {
+    width: 80px;
+    background-color: blue;
+    padding: 4px;
+    font-weight: bold;
 }
