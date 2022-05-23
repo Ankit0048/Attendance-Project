@@ -11,7 +11,6 @@
     <nav>
         <ul class="topnav" id="dropdownClick">
             <li ><a href="/">Home</a></li>
-            <li><a href="#about">Github</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -26,6 +25,8 @@
         </form>
     </div>
     {% if tasks==0 %}
+    <div class="popup">
         <h3>Face is not register. Try again</h3>
+    </div>
     {% endif %}
 </body>

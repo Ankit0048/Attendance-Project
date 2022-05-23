@@ -145,6 +145,10 @@ nav ul.topnav li a:hover {
     margin:auto;
     opacity: 0.8;
 }
+/* Message color when the registration of a user is done */
+.popup h2 {
+    color: lightgreen;
+}
 
 /* Registration page */
 .form_holder {
