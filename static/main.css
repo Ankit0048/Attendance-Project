@@ -110,7 +110,6 @@ nav ul.topnav li a:hover {
     opacity: 0.8;
 }
 
-
 .choices .user_instruction a button.login {
     background-image: url("login.png");
     background-size: 202px 202px;
@@ -180,7 +179,6 @@ nav ul.topnav li a:hover {
     width: 80px;
 }
 
-
 .form_holder .enteries input.click:hover {
     width: 80px;
     background-color: blue;
@@ -230,11 +228,179 @@ nav ul.topnav li a:hover {
     padding: 4px;
 }
 
-
-
 .capture form input:hover {
     width: 80px;
     background-color: blue;
     padding: 4px;
     font-weight: bold;
+}
+
+/* User login page */
+.choices .user_instruction a button.attend {
+    background-image: url("attend.png");
+    background-size: 205px 205px ;
+    background-position: -5px -5px;
+    font-size: 23px;
+    text-decoration:None;
+    font-weight: bold;
+    text-shadow: 3px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 0;
+    display: block;
+    margin:auto;
+    opacity: 0.8;
+}
+
+.choices .user_instruction a button.attend:hover {
+    background-image: url("attend.png");
+    background-size: 205px 205px ;
+    background-position: -5px -5px;
+    font-size: 23px;
+    color: red;
+    text-decoration:None;
+    font-weight: bold;
+    text-shadow: 3px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 0;
+    display: block;
+    margin:auto;
+    opacity: 0.8;
+}
+
+.choices .user_instruction a button.view {
+    background-image: url("view.png");
+    background-size: 202px 202px;
+    background-position: -3px -5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    font-size: 23px;
+    text-decoration:None;
+    font-weight: bold;
+    text-shadow: 3px;
+    padding: 0;
+    display: block;
+    margin:auto;
+    opacity: 0.8;
+}
+
+.choices .user_instruction a button.view:hover {
+    background-image: url("view.png");
+    background-size: 202px 202px;
+    background-position: -3px -5px;
+    height: 200px;
+    width: 200px;
+    color: red;
+    border-radius: 50%;
+    font-size: 23px;
+    text-decoration:None;
+    font-weight: bold;
+    text-shadow: 3px;
+    padding: 0;
+    display: block;
+    margin:auto;
+    opacity: 0.8;
+}
+
+/* Completion Page of the attendance*/
+.done {
+    width: 100%;
+    margin: 0;
+}
+
+.done img {
+    width: 30%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* View Month page of the user */
+.month_container {
+    display: block;
+    background-color: white;
+    margin:auto;
+    width:95%;
+    padding: 20px;
+    opacity: 0.8;
+    border-radius: 10% 10%;
+}
+/*  Row of Month  */
+.row {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+/* Column of Month */
+.row .col {
+    width: 33.3%
+}
+
+/* Each cell block */
+.row .col a {
+    display: block;
+    margin: auto;
+    width: 70%;
+    text-decoration: none;
+}
+
+.row .col a button{
+    height:40px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 5%;
+    font-size: 20px;
+}
+
+.row .col a button:hover {
+    height:40px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 5%;
+    font-size: 20px;
+    background-color: blue;
+    font-weight: bold;
+}
+/* Table of attendace of a month is the view)attendance html page */
+.content table {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.content table tbody {
+    display: block;
+    width: 100%;
+    margin: 0px; 
+}
+
+.content table tbody tr {
+    display: flex;
+    width: 100%;
+    margin: auto; 
+}
+
+.content table tbody tr th, td{
+    display: block;
+    margin: 0px; 
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>{{tasks[1]}}</title>
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li ><a href="/">Home</a></li>
+            <li style="text-align: right;
+                color: blue;
+                display: block;
+                margin:auto;
+                text-decoration: none;
+                min-height: 20px;
+                padding: 15px;
+                text-transform: uppercase;">
+                USER : {{tasks[0]}}</li>
+        </ul>
+    </nav>
+    <div class="container">
+    <h1>Attendance Project</h1>
+    </div>
+    <div class="choices">
+        <div class="user_instruction">
+            <a href="/attendance"><button class="attend">PUT ATTENDANCE</button></a>
+        </div>
+        <div class="user_instruction">
+            <a href="/view"><button class="view">VIEW ATTENDANCE</button></a>
+        </div>
+    </div>
+    {% if tasks==0 %}
+    <div class="popup">
+        <h2>User registration is complete</h2>
+    </div>
+    {% endif %}
+</body>
+</html>

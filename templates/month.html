@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>{{tasks[1]}}</title>
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li ><a href="/">Home</a></li>
+            <li style="text-align: right;
+                color: blue;
+                display: block;
+                margin:auto;
+                text-decoration: none;
+                min-height: 20px;
+                padding: 15px;
+                text-transform: uppercase;">
+                USER : {{tasks[0]}}</li>
+            <li style="text-align: right;
+                color: blue;
+                display: block;
+                margin:auto;
+                text-decoration: none;
+                min-height: 20px;
+                padding: 15px;
+                text-transform: uppercase;">
+                REGISTRATION DATE: {{tasks[2]}}</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Select Month</h1>
+    </div>
+    <br>
+    <div class="month_container">
+        <div class="row">
+            <div class="col">
+                <a href = '/month_view/01'><button>January</button></a>
+            </div>
+            <div class="col">
+                <a href = '/month_view/02'><button>February</button></a>
+            </div>
+            <div class="col">
+                <a href = '/month_view/03'><button>March</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href = '/month_view/04'><button>April</button></a>
+            </div>
+            <div class="col">
+                <a href = '/month_view/05'><button>May</button></a>
+            </div>
+            <div class="col">
+                <a href = '/month_view/06'><button>June</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href = '/month_view/07'><button>July</button></a>
+            </div>
+            <div class="col">
+                <a href = '/month_view/08'><button>August</button></a>
+            </div>
+            <div class="col">
+                <a href = '/month_view/09'><button>September</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href = '/month_view/10'><button>October</button></a>
+            </div>
+            <div class="col">
+                <a href = '/month_view/11'><button>November</button></a>
+            </div>
+            <div class="col">
+                <a href = '/month_view/12'><button>December</button></a>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

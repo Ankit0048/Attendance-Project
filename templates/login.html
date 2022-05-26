@@ -29,5 +29,17 @@
             </form>
         </div>
     </div>
+    {% if tasks==1 %}
+    <div class="popup">
+        <br>
+        <h3 color="red" align="center">Your email id is not registered</h3>
+    </div>
+    {% elif tasks==0  %}
+    <div class="popup">
+        <br>
+        <h3 color="red" align="center">Incorrect Password!!!</h3>  
+    </div>
+    {% else %}
+    {% endif %}
 </body>
 </html>
