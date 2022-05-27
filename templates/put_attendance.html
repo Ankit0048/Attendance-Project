@@ -19,4 +19,15 @@
     <div class="camera_container">
         <img src="{{url_for('video_attend')}}" width="50%">
     </div>
+    <div class="capture">
+        <form action="/attendance" method="POST">
+            <input type="submit" value="Done">
+        </form>
+    </div>
+    {% if tasks==0 %}
+    <div class="popup">
+        <h3>Attendance is not taken</h3>
+    </div>
+    {% endif %}
 </body>
+</html>

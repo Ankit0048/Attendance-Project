@@ -12,26 +12,18 @@
         <ul class="topnav" id="dropdownClick">
             <li ><a href="/">Home</a></li>
             <li><a href="/login">Github</a></li>
-            <li class="topnav-right"><a href="/admin_login">Admin Login</a></li>
+            <li class="topnav-right"><a href="/">Admin Logout</a></li>
         </ul>
     </nav>
     <div class="container">
     <h1>Attendance Project</h1>
     </div>
-    <br>
-    <br>
     <div class="choices">
-        <div class="user_instruction">
-            <a href="/register"><button class="regis">NEW USER REGISTRATION</button></a>
+        <div class="admin_instruction">
+            <a href="/delete"><button class="delete">Delete Registration</button></a>
         </div>
-        <div class="user_instruction">
-            <a href="/login"><button class="login">USER LOGIN</button></a>
+        <div class="admin_instruction">
+            <a href="/admin_view"><button class="view">View Registered Attendance</button></a>
         </div>
-    </div>
-    {% if tasks==0 %}
-    <div class="popup">
-        <h2>User registration is complete</h2>
-    </div>
-    {% endif %}
 </body>
 </html>

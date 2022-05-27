@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>admin_Login</title>
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li ><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Admin Login</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form_holder">
+        <div class="enteries">
+            <form action="\admin_login" method="POST">
+           
+                <h2>Password</h2>
+                <input type="password" placeholder="Enter Password" id="password" name="admin_password"> 
+                <br>
+                <br>
+                <input type="submit" value="Login" class="click">
+            </form>
+        </div>
+    </div>
+    {% if tasks==1 %}
+    <div class="popup">
+        <br>
+        <h3 color="red" align="center">Admin password is wrong</h3>
+    </div>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>admin_delete</title>
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li ><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Admin Delete</h1>
+    </div>
+    <div class="user_email">
+        <form action="/delete" method="POST">
+            <input name='useremail' placeholder="USER Email ID" type="text">
+            <input type="submit" Value="Delete" class="click">
+            {% if data==0 %}
+                <h5>Email not present</h5>
+            {% endif %}
+        </form>
+    </div>
+</div>
+<h1 align="center">All Registered User</h1>
+<div class="Allcontent">
+    
+    <table border="2" align="center" cellpadding="10">
+        <tr>
+            <th>S. no</th>
+            <th>User Email Id</th>
+            <th>User Name</th>
+        </tr>
+        {% for i in tasks %}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.user_name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
