@@ -41,6 +41,7 @@ First make sure cmake is been already installed. Instead of directly using "pip 
 3.While face registration and recognition one person at a time is preferred.
 4.When giving the attendance the camera stops and image freezes on the screen after that you need to press Done.
 5.An area with sufficient lightning is preferred. 
+6.Current admin password : admin1234
 
 ** RUN **
 1.To the run the program make sure all the libraries are present with their required version and python version 3.10.4 is installed.
