@@ -34,6 +34,25 @@ All libraries except dlib can be installed from pip install except for the dlib 
 First make sure cmake is been already installed. Instead of directly using "pip install dlib" use ->
 "pip install https://github.com/jloh02/dlib/releases/download/v19.22/dlib-19.22.99-cp310-cp310-win_amd64.whl"
 
+Libraries Used:
+1. flask                : pip install flask
+2. flask_sqlalchemy     : pip install flask-sqlalchemy
+3. cv2                  : pip install opencv-python
+4. datetime             : by default in python
+5. face_recognition     : pip install face-recognition
+6. openpyxl             : pip install openpyxl
+
+One can prefer installing all the libraries in a virtual environment with the required python version 3.10.4 or can directly 
+install also in the system
+
+If you wish to set up the virtual environment
+** To Setup Virtual Environment **
+1. pip install virtualenv
+2. virtualenv env
+3. .\env\Scripts\activate
+
+Then install the requirements
+
 ** Instructions **
 
 1.This development is designed for desktop web app. 
