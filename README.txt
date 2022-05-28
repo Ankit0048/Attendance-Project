@@ -32,7 +32,7 @@ It has also admin control where he can see data of all the user and remove the r
 
 All libraries except dlib can be installed from pip install except for the dlib which gives an error.
 First make sure cmake is been already installed. Instead of directly using "pip install dlib" use ->
-"pip install https://github.com/jloh02/dlib/releases/download/v19.22/dlib-19.22.99-cp310-cp310-win_amd64.wh"
+"pip install https://github.com/jloh02/dlib/releases/download/v19.22/dlib-19.22.99-cp310-cp310-win_amd64.whl"
 
 ** Instructions **
 
