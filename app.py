@@ -171,7 +171,7 @@ def  generate_frame_compare():
                 faceLoc2 = [int(x*4) for x in faceLoc]
                 # Compare the face data of the camera image wth the previously stored data in the database about the face
                 result = face_recognition.compare_faces([registered_encoding],face_encoding[0],tolerance=0.4)
-                if result[0] == True:
+                if True in result:
                     count +=1
                     # if the user is match his name appears on the image 
                     frame = cv2.putText(frame,user.user_name, (faceLoc2[3]+6, faceLoc2[2]-6),  cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 1 )
@@ -344,6 +344,8 @@ def video_attend():
 # The User details to see which months attendance is to be seen the information is being loaded
 @app.route('/view')
 def view():
+    if user is None:
+        return redirect('/login')
     return render_template('month.html', tasks = [user.user_name, user.email, str(user.registration_date).split()[0]])
 
 # The month attendance is shwon in form of table using the data from the excel sheet
